@@ -19,4 +19,6 @@ Route::get('/', function () {
 });
 // phải khai báo controller đang dùng là gì, ex: use App\Http\Controllers\tên_controller;
 // route lấy funciton có dạng, ex: Route::get('/login', [tên_controller::class, 'tên_hàm']);
-Route::get('/login', [AdminController::class, 'Signin']);
+Route::get('/login', [AdminController::class, 'Login']);
+Route::get('/signin', [AdminController::class, 'Signin'])->name('signin');
+Route::get('/forget', [AdminController::class, 'forget'])->name('forget');
