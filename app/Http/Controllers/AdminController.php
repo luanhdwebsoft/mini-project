@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     public function Signin(){
-        return view('pages/login');
+        return view('admin/login');
     }
 }

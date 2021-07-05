@@ -15,7 +15,7 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
-    return view('pages/login');
+    return view('admin/login');
 });
 // phải khai báo controller đang dùng là gì, ex: use App\Http\Controllers\tên_controller;
 // route lấy funciton có dạng, ex: Route::get('/login', [tên_controller::class, 'tên_hàm']);
